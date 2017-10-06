@@ -28,8 +28,8 @@ if (config.uid) process.setuid(config.uid);
 
 var httpUrl;
 if (config.server.secure) {
-    httpUrl = "https://localhost:" + port;
+    httpUrl = "URL:" + port;
 } else {
-    httpUrl = "http://localhost:" + port;
+    httpUrl = "URL:" + port;
 }
 console.log(yetify.logo() + ' -- signal master is running at: ' + httpUrl);
